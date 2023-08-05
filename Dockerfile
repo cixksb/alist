@@ -4,7 +4,7 @@ WORKDIR /app/
 COPY ./ ./
 RUN apk add --no-cache bash curl gcc git go musl-dev; \
     bash build.sh release docker
-
+##
 FROM alpine:3.18
 LABEL MAINTAINER="i@nn.ci"
 VOLUME /opt/alist/data/
